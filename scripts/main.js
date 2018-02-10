@@ -14,7 +14,7 @@ var myHeading = document.querySelector('h1'); //get 'h1' element
 function setUserName(){
     var myName = prompt('Tell me your name!'); //prompt() require input something
     localStorage.setItem('name', myName); // create 'name' data
-    myHeading.textContent = "Hell " + myName +"!";
+    myHeading.textContent = "Hello " + myName +"!";
 }
 if(!localStorage.getItem('name')){
   setUserName();
