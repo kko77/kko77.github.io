@@ -18,9 +18,7 @@ function setUserName(){
 }
 if(!localStorage.getItem('name')){
   setUserName();
-  alert('no name');
 }else{
-  //alert(localStorage.getItem('name'));
   var StoredName = localStorage.getItem('name');
   myHeading.textContent = "Hello "+StoredName+", again!";
 }
